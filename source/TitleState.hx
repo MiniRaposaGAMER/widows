@@ -707,15 +707,15 @@ class TitleState extends MusicBeatState
 					FlxG.sound.music.onComplete = moveToAttract;
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					createCoolText(['Funkin Crew Inc', 'Shadow Mario', 'mikolka9144']);
+					createCoolText(['Mini', 'Raposa', 'Gamer']);
 				case 4:
-					addMoreText('present');
+					addMoreText('presents');
 				case 5:
 					deleteCoolText();
 				case 6:
-					createCoolText(['Not associated', 'with'], -40);
+					createCoolText(['Associated', 'with'], -40);
 				case 8:
-					addMoreText('newgrounds', -40);
+					addMoreText('Microsoft', -40);
 					ngSpr.visible = true;
 				case 9:
 					deleteCoolText();
@@ -731,7 +731,7 @@ class TitleState extends MusicBeatState
 				case 15:
 					addMoreText('Night');
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Funkin 7'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();
