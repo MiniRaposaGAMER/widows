@@ -564,7 +564,7 @@ class TitleState extends MusicBeatState
 							FlxG.sound.music.fadeIn(4, 0, 0.7);
 						}
 						FlxTransitionableState.skipNextTransIn = true;
-						MusicBeatState.switchState(new FreeplayState());
+						MusicBeatState.switchState(new MainMenuState());
 					}
 					closedState = true;
 				});
