@@ -756,7 +756,7 @@ class ResultState extends MusicBeatSubState
       speedOfTween.x -= 0.1;
     }
 
-    if (TouchUtil.justPressed || controls.PAUSE)
+    if (controls.PAUSE)
     {
       if (FlxG.sound.music != null)
       {
@@ -808,7 +808,7 @@ class ResultState extends MusicBeatSubState
           trace('THE RANK IS Higher.....');
 
           shouldTween = true;
-          controls.isInSubstate = FlxTransitionableState.skipNextTransOut = true;
+          FlxTransitionableState.skipNextTransOut = true;
           targetState = FreeplayState.build(
             {
               {
@@ -827,7 +827,7 @@ class ResultState extends MusicBeatSubState
         {
           FlxG.sound.pause(); //? fix sound
           shouldTween = false;
-          controls.isInSubstate = shouldUseSubstate = true;
+          shouldUseSubstate = true;
           targetState = new StickerSubState(null, (sticker) -> FreeplayState.build(null, sticker));
         }
       }
