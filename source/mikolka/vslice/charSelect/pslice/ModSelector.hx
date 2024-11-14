@@ -50,7 +50,7 @@ class ModSelector extends FlxTypedSpriteGroup<FlxSprite> {
             if (directories[curDirectory] == null || directories[curDirectory].length < 1){
                 ModsHelper.loadModDir("");
                 var nxtArrow = directories.length==1 ? '  ' : '=>';
-                directoryTxt.text = '  No Mod Directory Loaded $nxtArrow';
+                directoryTxt.text = '';
             }
             else
             {
